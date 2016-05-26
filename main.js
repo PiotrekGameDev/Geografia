@@ -27,23 +27,28 @@ window.onload=function(){
 	"slideInLeft"
 	]
 	var slides=$(".slide").toArray();
-	$(slides[0]).css( "visibility", "visible" );
-	$(slides[0]).css( "animation",  animations[0]+" 4s" );
 	var i=0;
-	addEventListener("keyup", function(e) {
-		$(slides[i]).css( "animation", "none" );
-		$(slides[i]).css( "visibility", "hidden" );
-		if (e.keyCode==39 && i<slides.length-1){
-			i++;
-		}
-		if (e.keyCode==37&& i>0){
-			i--;
-		}
+	showSlide=function(){
 		$(slides[i]).css( "animation", "none" );
 		setTimeout(function ()
 		{
 			$(slides[i]).css( "visibility", "visible" );
     		$(slides[i]).css( "animation", animations[random(0, animations.length-1)]+" 4s" );
 		}, 1);
+	}
+	showSlide();
+	addEventListener("keyup", function(e) {
+		if (e.keyCode==39 && i<slides.length-1){
+			$(slides[i]).css( "animation", "none" );
+			$(slides[i]).css( "visibility", "hidden" );
+			i++;
+			showSlide();
+		}
+		if (e.keyCode==37&& i>0){
+			$(slides[i]).css( "animation", "none" );
+			$(slides[i]).css( "visibility", "hidden" );
+			i--;
+			showSlide();
+		}
 	}, false);
 }
