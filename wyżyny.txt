@@ -74,25 +74,25 @@ Wy¿yna krakowsko-czêstochowska :
 - Czêstochowa
 - Kraków
 
-Katowice
+.Katowice
 Uniwersytet Œl¹ski
 Spodek
 Muzeum Œl¹skie
 Park Œl¹ski
 Pa³ac Goldsteinów
 
-Lublin
+.Lublin
 Starówka
 Zamek Lubelski
 
-Zamoœæ
+.Zamoœæ
 Katedra
 Ratusz
 Kamienice
 Synagoga
 Park Miejski
 
-Kraków
+.Kraków
 Zamek na Wawelu
 Koœció³ Mariacki
 Rynek i Sukiennice
@@ -102,5 +102,5 @@ Uniwersytet Jagielloñski
 
 Czêstochowa
 Jasna Góra
-Park Miniatór
+Park Miniatur
 Politechnika
