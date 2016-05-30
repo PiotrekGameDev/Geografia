@@ -27,7 +27,7 @@ window.onload=function(){
 	"slideInLeft"
 	]
 	var slides=$(".slide").toArray();
-	var i=0;
+	var i=2;
 	showSlide=function(){
 		$(slides[i]).css( "animation", "none" );
 		setTimeout(function ()
@@ -36,7 +36,8 @@ window.onload=function(){
     		$(slides[i]).css( "animation", animations[random(0, animations.length-1)]+" 4s" );
 		}, 1);
 	}
-	showSlide();
+	//showSlide();
+	$(slides[i]).css( "visibility", "visible" );
 	addEventListener("keyup", function(e) {
 		if (e.keyCode==39 && i<slides.length-1){
 			$(slides[i]).css( "animation", "none" );
