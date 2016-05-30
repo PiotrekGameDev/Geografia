@@ -27,7 +27,7 @@ window.onload=function(){
 	"slideInLeft"
 	]
 	var slides=$(".slide").toArray();
-	var i=2;
+	var i=14;
 	showSlide=function(){
 		$(slides[i]).css( "animation", "none" );
 		setTimeout(function ()
